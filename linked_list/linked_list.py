@@ -75,14 +75,17 @@ class LinkedList:
 
     # method that returns the value of the last node in the linked list
     # returns None if the linked list is empty
-    # Time Complexity: O(n)
-    # Space Complexity: O(1)
+    # Time Complexity: ?
+    # Space Complexity: ?
     def get_last(self):
         current_node = self.head
 
         if current_node is None:
             return None
         
+        # What do I want the while loop to do?
+            # I want to keep the while loop going until I reach the last node
+            # When the last node is reached, I want to return the value 
         while True:
             if current_node.next is None:
                 return current_node.value
@@ -92,9 +95,10 @@ class LinkedList:
         
 
     # method that inserts a given value as a new last node in the linked list
-    # Time Complexity: O(n)
-    # Space Complexity: O(1)
+    # Time Complexity: ?
+    # Space Complexity: ?
     def add_last(self, value):
+<<<<<<< HEAD
         new_node = Node(value)
         current_node = self.head
 
@@ -111,6 +115,9 @@ class LinkedList:
 
         # When last node is found, I want to append new_node to it.
         current_node.next = new_node
+=======
+        pass
+>>>>>>> parent of abcd4a6 (passing add last tests)
 
     # method to return the max value in the linked list
     # returns the data value and not the node
